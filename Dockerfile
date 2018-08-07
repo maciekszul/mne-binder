@@ -11,7 +11,7 @@ RUN conda update conda; conda install --yes --quiet numpy setuptools numpy scipy
 RUN ipython -c "import mne; print(mne.datasets.sample.data_path(verbose=False))"
 
 # Try to decrease initial IPython kernel load times?
-RUN ipython -c "import matplotlib.pyplot as plt; print(plt)"
+#RUN ipython -c "import matplotlib.pyplot as plt; print(plt)"
 
 # Download and move ipynb notebooks
 RUN git clone --depth=1 https://github.com/mne-tools/mne-tools.github.io; mv mne-tools.github.io/dev/_downloads/*.ipynb .; rm -Rf mne-tools.github.io
