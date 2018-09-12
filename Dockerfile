@@ -13,8 +13,5 @@ RUN ipython -c "import mne; print(mne.datasets.sample.data_path(verbose=False))"
 # Try to decrease initial IPython kernel load times?
 RUN ipython -c "import os; os.environ['QT_QPA_PLATFORM']='offscreen'; import matplotlib.pyplot as plt; print(plt)"
 
-# Import the auditory dataset
-RUN ipython -c "from mne.datasets.brainstorm import bst_auditory"
-
 # Download and move ipynb notebooks
 RUN git clone --depth=1 https://github.com/mne-tools/mne-tools.github.io; mv mne-tools.github.io/dev/_downloads/*.ipynb .; rm -Rf mne-tools.github.io
