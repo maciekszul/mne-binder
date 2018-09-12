@@ -1,14 +1,11 @@
 .. -*- mode: rst -*-
 
-mne-binder
-==========
+MEG Processing and Analysis Tutorial
+====================================
 
-This is a `binder <http://mybinder.org>`_  helper for
-`MNE-Python <http://github.com/mne-tools/mne-python>`_.
+To launch the notebook:
+    http://mybinder.org/v2/gh/maciekszul/mne-binder/master?filepath=mne_tut_py2.ipynb
 
-Notebooks can be launched with e.g.:
-
-    http://mybinder.org/repo/mne-tools/mne-binder/notebooks/plot_introduction.ipynb
 
 Licensing
 ^^^^^^^^^
